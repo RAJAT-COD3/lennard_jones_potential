@@ -107,7 +107,7 @@ def main():
         min_energy_index = np.argmin(U_values)
         most_likely_distance = r_values[min_energy_index]
 
-        info_text = f"Chemical Formula: {cfrm}\nSigma: {σ}\nEpsilon: {ε}\nName: {name}\nRoll Number: {roll}\nSubgroup: {sgrp}"
+        info_text = f"Chemical Formula: {cfrm}\nSigma: {σ}\nEpsilon: {ε}\n Most likely distance:-{most_likely_distance}\nName: {name}\nRoll Number: {roll}\nSubgroup: {sgrp}"
 
         plot = plot_potential_energy(r_values, U_values, most_likely_distance, info_text)
         st.pyplot(plot)  # Display the plot using st.pyplot()

@@ -122,7 +122,7 @@ def main():
 
         plot = plot_potential_energy(r_values, U_values, most_likely_distance, info_text)
         st.pyplot(plot)  # Display the plot using st.pyplot()
-        st.write(r_start_value)
+        #st.write(r_start_value)
 
 if __name__ == "__main__":
     main()

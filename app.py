@@ -234,7 +234,7 @@ def main():
                 σ = 0.369e-9
                 ε = 6.65e-22
                 r_start_value = 3.5e-10
-                r_end_value = 6.5e-10
+                r_end_value = 7.5e-10
             elif (roll>=702200081 and roll<=702200090):
                 cfrm = "CO2"
                 σ = 0.394e-9

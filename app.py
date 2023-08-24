@@ -93,10 +93,10 @@ def main():
     name = st.text_input("Enter your name")
 
     if roll == 702200065:
-        give_answer = "Rhoda"
+        give_answer = "Yes"
     
     elif roll == 702200092:
-        give_answer = "Shagun"
+        give_answer = "Yes"
 
     elif (roll>=702200001 and roll<=702200010):
         cfrm = "Ar"

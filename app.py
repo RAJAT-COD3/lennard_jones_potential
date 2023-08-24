@@ -35,7 +35,7 @@ def funr_values(r_start_value , r_end_value):
 def plot_potential_energy(r_values, U_values, most_likely_distance, info_text, y_lim):
     plt.figure()
     plt.plot(r_values, U_values)
-    plt.xlabel("Distance (nm)")
+    plt.xlabel("Distance (m)")
     plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.1e'))
     plt.ylabel("Potential Energy (J)")
     plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
@@ -68,7 +68,7 @@ def fun_force(delta_U):
 def plot_force(r_values, F_values,most_likely_distance_force,info_text_force):
     plt.figure()
     plt.plot(r_values, F_values)
-    plt.xlabel("Distance (nm)")
+    plt.xlabel("Distance (m)")
     #plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.1e'))
     plt.ylabel("Force (N)")
     plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.1e'))

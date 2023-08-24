@@ -5,20 +5,18 @@ from matplotlib.ticker import FormatStrFormatter
 
 
 def set_theme():
-    
-    st.set_page_config(
-        page_title="My Streamlit App",
-        page_icon=":sunglasses:",
-        layout="wide",
-        initial_sidebar_state="collapsed",
-        theme="light"
+    # Add custom CSS to set the background color to white
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: white;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
     )
 
-# Call the set_theme function before any other Streamlit code
-set_theme()
-
-# Rest of your Streamlit app code goes here
-st.title("Welcome to my Streamlit App")
 
 
 def lennard_jones_potential(r, ε, σ):

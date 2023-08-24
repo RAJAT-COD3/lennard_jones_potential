@@ -3,6 +3,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 
+
+def set_theme():
+    
+    st.set_page_config(
+        page_title="My Streamlit App",
+        page_icon=":sunglasses:",
+        layout="wide",
+        initial_sidebar_state="collapsed",
+        theme="light"
+    )
+
+# Call the set_theme function before any other Streamlit code
+set_theme()
+
+# Rest of your Streamlit app code goes here
+st.title("Welcome to my Streamlit App")
+
+
 def lennard_jones_potential(r, ε, σ):
     return 4 *ε * ((σ / r)**12 - (σ / r)**6)
 
@@ -65,6 +83,7 @@ def plot_force(r_values, F_values,most_likely_distance_force,info_text_force):
 
 
 def main():
+    set_theme()
     
     give_answer = "Yes"
 

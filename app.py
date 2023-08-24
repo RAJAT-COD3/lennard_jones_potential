@@ -239,7 +239,7 @@ def main():
                 cfrm = "CO2"
                 σ = 0.394e-9
                 ε = 1.41e-21
-                r_start_value = 3.9e-10
+                r_start_value = 3.7e-10
                 r_end_value = 6.5e-10
             else:
                 cfrm = "Air"

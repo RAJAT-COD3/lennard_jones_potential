@@ -22,7 +22,7 @@ def plot_potential_energy(r_values, U_values, most_likely_distance, info_text):
     plt.ylabel("Potential Energy (J)")
     #plt.title("Lennard-Jones Potential Energy")
     plt.axvline(x=most_likely_distance, color='r', linestyle='--')
-    plt.ylim(bottom=min(U_values), top=max(U_values))
+    plt.ylim(bottom=min(U_values)-(1e-30), top=max(U_values))
     #plt.ylim(bottom=min(U_values) - 1e-30)
     plt.legend()
     plt.grid()

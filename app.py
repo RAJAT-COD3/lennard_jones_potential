@@ -260,7 +260,7 @@ def main():
             force = fun_force(delta_U)
             
             min_force_index = np.argmin(force)
-            most_likely_distance_force = r_values[min_force_index]
+            most_likely_distance_force = r_values[min_force_index+1]
 
             info_text_force = f"Minimum force is at:-{most_likely_distance_force}m"
             

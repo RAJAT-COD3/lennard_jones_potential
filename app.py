@@ -274,7 +274,7 @@ def main():
             st.text("")
             st.text("")
 
-            st.markdown("<h3 style='text-align: center; color: black;'>Force vs diasatance curve</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: black;'>Force vs distance curve</h3>", unsafe_allow_html=True)
             st.pyplot(plot_F)
     
             #st.write(force[min_force_index])
